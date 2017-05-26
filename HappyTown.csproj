@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -69,9 +66,6 @@
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
@@ -115,7 +109,6 @@
     <Compile Include="Assets\PureMVC\Patterns\Observer\Observer.cs" />
     <Compile Include="Assets\PureMVC\Patterns\Proxy\Proxy.cs" />
     <Compile Include="Assets\_App_Test_Code\GameUtility.cs" />
-    <Compile Include="Assets\_App_Test_Code\Local\OpenFile.cs" />
     <Compile Include="Assets\_App_Test_Code\NotificationConstant.cs" />
     <Compile Include="Assets\_App_Test_Code\Test.cs" />
     <Compile Include="Assets\_App_Test_Code\TestCommand.cs" />
@@ -129,8 +122,14 @@
     <Compile Include="Assets\_Project\_Code\_Config\IConfig.cs" />
     <Compile Include="Assets\_Project\_Code\_Config\SysDefine.cs" />
     <Compile Include="Assets\_Project\_Code\_Exception\JsonAnalysisExp.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightFacade.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightStartUpCommand.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightUIForm.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightUISelectModel.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\SelectModelMediator.cs" />
     <Compile Include="Assets\_Project\_Code\_MainScene\MainUIForm.cs" />
     <Compile Include="Assets\_Project\_Code\_Manager\BaseUIForms.cs" />
+    <Compile Include="Assets\_Project\_Code\_Manager\EventEnums.cs" />
     <Compile Include="Assets\_Project\_Code\_Manager\IShowMode.cs" />
     <Compile Include="Assets\_Project\_Code\_Manager\LogSystem.cs" />
     <Compile Include="Assets\_Project\_Code\_Manager\ResourcesMgr.cs" />
