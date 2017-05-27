@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UnityHelper : MonoBehaviour
 {
@@ -52,6 +53,7 @@ public class UnityHelper : MonoBehaviour
         targetTrans.localEulerAngles = Vector3.zero;
     }
 
+    #region GetChildNodeComponentScript
     /// <summary>
     /// 获取子节点脚本组件
     /// </summary>
@@ -104,4 +106,6 @@ public class UnityHelper : MonoBehaviour
             return null;
         }
     }
+
+    #endregion
 }

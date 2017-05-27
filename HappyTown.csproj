@@ -122,11 +122,9 @@
     <Compile Include="Assets\_Project\_Code\_Config\IConfig.cs" />
     <Compile Include="Assets\_Project\_Code\_Config\SysDefine.cs" />
     <Compile Include="Assets\_Project\_Code\_Exception\JsonAnalysisExp.cs" />
-    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightFacade.cs" />
-    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightStartUpCommand.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\F_CreateStudioMediator.cs" />
+    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\F_SelectModelMediator.cs" />
     <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightUIForm.cs" />
-    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\FightUISelectModel.cs" />
-    <Compile Include="Assets\_Project\_Code\_MainScene\FightScene\SelectModelMediator.cs" />
     <Compile Include="Assets\_Project\_Code\_MainScene\MainUIForm.cs" />
     <Compile Include="Assets\_Project\_Code\_Manager\BaseUIForms.cs" />
     <Compile Include="Assets\_Project\_Code\_Manager\EventEnums.cs" />

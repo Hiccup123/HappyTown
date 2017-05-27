@@ -15,16 +15,13 @@ using UIForm;
 
 namespace Fight
 {
-	public class FightUIForm : BaseUIForms {
-
-        public FightUISelectModel _SelectModel;
-
+	public class FightUIForm : BaseUIForms
+    {
         private void Awake()
         {
             CurrentUIType.UIForms_Type = UIFormType.Normal;
 
-            FightFacade facade = FightFacade.Instance as FightFacade;
-            facade.FightStartUp(this);
+            
         }
     }
 }
