@@ -22,6 +22,17 @@ public class UnityHelper : MonoBehaviour
     /// <returns></returns>
     public static Transform FindTheChild(GameObject rootObj, string name)
     {
+        if(string.IsNullOrEmpty(name))
+        {
+            Debug.LogError("name is null !!!");
+            return null;
+        }
+        if(rootObj == null)
+        {
+            Debug.Log("RootObj is null !!!");
+            return null;
+        }
+
         Transform targetTrans = null;
 
         targetTrans = rootObj.transform.Find(name);
@@ -47,10 +58,24 @@ public class UnityHelper : MonoBehaviour
     /// <param name="flag"></param>
     public static void AddChildToParent(Transform targetTrans, Transform rootTrans, bool flag = false)
     {
+        AddChildToParent(targetTrans, rootTrans, Vector3.zero, Vector3.one, Vector3.zero, flag);
+    }
+
+    /// <summary>
+    /// 为目标设置父对象
+    /// </summary>
+    /// <param name="targetTrans"></param>
+    /// <param name="rootTrans"></param>
+    /// <param name="pos"></param>
+    /// <param name="scale"></param>
+    /// <param name="rotation"></param>
+    /// <param name="flag"></param>
+    public static void AddChildToParent(Transform targetTrans, Transform rootTrans, Vector3 pos, Vector3 scale, Vector3 rotation, bool flag = false)
+    {
         targetTrans.SetParent(rootTrans, flag);
-        targetTrans.localPosition = Vector3.zero;
-        targetTrans.localScale = Vector3.one;
-        targetTrans.localEulerAngles = Vector3.zero;
+        targetTrans.localPosition = pos;
+        targetTrans.localScale = scale;
+        targetTrans.localEulerAngles = rotation;
     }
 
     #region GetChildNodeComponentScript
@@ -72,6 +97,7 @@ public class UnityHelper : MonoBehaviour
         }
         else
         {
+            Debug.LogError("Target Transform Node is null !!!");
             return null;
         }
     }

@@ -13,10 +13,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UIFW;
+using System;
 
 namespace UIForm
 {
-    public class BaseUIForms : MonoBehaviour
+    public class BaseUIForms : UIBase
     {
         //当前（基类）窗口的类型
         private UIType _CurrentUIType = new UIType();
@@ -141,7 +143,6 @@ namespace UIForm
         {
             MessageCenter.AddMsgListener(msgType, msgDelivery);
         }
-
         #endregion
     }
 }

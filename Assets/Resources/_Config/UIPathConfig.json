@@ -6,6 +6,10 @@
       {
          "Key" : "MainUIForm",
          "Value" : "_Prefabs/_UIPrefabs/MainUIForm"
+      },
+	  {
+         "Key" : "FightUIForm",
+         "Value" : "_Prefabs/_UIPrefabs/FightUIForm"
       }
    ]
 }
