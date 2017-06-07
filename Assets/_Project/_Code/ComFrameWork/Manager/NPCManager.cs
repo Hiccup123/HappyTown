@@ -26,7 +26,7 @@ namespace UIFW
             Instance = this;
         }
 
-        public void SendMsg(MsgBase tempMsg)
+        public void SendMsg<T>(MsgBase<T> tempMsg)
         {
             if (tempMsg.GetManager() == ManagerID.NPCManager)
             {

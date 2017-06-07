@@ -29,14 +29,31 @@ namespace UIFW
             UIManager.Instance.UnRegistMsg(mono, msgs);
         }
 
-        public void SendMsg(MsgBase tempMsg)
+        #region SendMsg
+        public void SendMsg(ushort tempMsgId)
         {
-            UIManager.Instance.SendMsg(tempMsg);
+            UIManager.Instance.SendMsg(new MsgBase<object>(tempMsgId));
         }
 
-        public override void ProcessEvent(MsgBase tempMsg)
+        public void SendMsg<T>(ushort tempMsgId)
+        {
+            UIManager.Instance.SendMsg(new MsgBase<T>(tempMsgId));
+        }
+
+        public void SendMsg<T>(ushort tempMsgId,T body)
+        {
+            UIManager.Instance.SendMsg(new MsgBase<T>(tempMsgId,body));
+        }
+        #endregion
+
+        public override void ProcessEvent<T>(MsgBase<T> tempMsg)
         {
             
+        }
+
+        protected UIBehaviour GetUIBehaviour(string name)
+        {
+            return UIManager.Instance.GetUIBehaviour(name);
         }
 
         private void OnDestroy()

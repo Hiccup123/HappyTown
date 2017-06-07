@@ -28,12 +28,12 @@ namespace UIFW
             gameObject.AddComponent<GameManager>();
         }
 
-        public void SendToMsg(MsgBase tempMsg)
+        public void SendToMsg<T>(MsgBase<T> tempMsg)
         {
             AnalysisMsg(tempMsg);
         }
 
-        private void AnalysisMsg(MsgBase tempMsg)
+        private void AnalysisMsg<T>(MsgBase<T> tempMsg)
         {
             ManagerID tempId = tempMsg.GetManager();
 

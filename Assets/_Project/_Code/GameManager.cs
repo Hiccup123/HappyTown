@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UIForm;
+using UIFW;
 
 public class GameManager : MonoBehaviour {
     
@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour {
     {
         //LogSystem.WriteData(GetType() + "/Start()/");
         //LogSystem.SyncLogCatchToFile();
-       
-        UIManager.Instance.ShowUIForm("FightUIForm");
+
+        UIFormManager.Instance.ShowUIForm("MainUIForm");
+        UIFormManager.Instance.ShowUIForm("FightUIForm");
         //PoolManager.Instance.RequestObj(Resources.Load("_Prefabs/_UIPrefabs/Canvas") as GameObject);
 	}
 }

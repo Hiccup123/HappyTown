@@ -158,7 +158,7 @@ namespace UIFW
         /// 来了消息 通知整个消息链表
         /// </summary>
         /// <param name="tempMsg"></param>
-        public override void ProcessEvent(MsgBase tempMsg)
+        public override void ProcessEvent<T>(MsgBase<T> tempMsg)
         {
             if(!eventTree.ContainsKey(tempMsg.MsgId))
             {

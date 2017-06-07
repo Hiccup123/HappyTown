@@ -16,7 +16,7 @@ namespace UIFW
 {
 	public abstract class MonoBase : MonoBehaviour {
 
-        public abstract void ProcessEvent(MsgBase tempMsg);
+        public abstract void ProcessEvent<T>(MsgBase<T> tempMsg);
 	}
 }
 

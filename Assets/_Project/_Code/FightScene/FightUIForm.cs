@@ -11,7 +11,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UIForm;
 using UnityEngine.UI;
 using UIFW;
 
@@ -64,26 +63,25 @@ namespace Fight
         private void Start()
         {
             _PanelData.PushPanel(_Main.gameObject);
-            UIFW.UIManager.Instance.GetGameObject("Btn_Back").GetComponent<UIBehaviour>().AddButtonListener(BtnBack);
+            GetUIBehaviour("Btn_Back").AddButtonListener(BtnBack);
         }
 
         void BtnBack()
         {
             Debug.Log("BackClick");
-            MsgBase msgBase = new MsgBase((ushort)UIEventFight.FightBack);
-            SendMsg(msgBase);
+            SendMsg((ushort)UIEventFight.FightBack);
         }
 
-        public override void ProcessEvent(MsgBase tempMsg)
+        public override void ProcessEvent<T>(MsgBase<T> tempMsg)
         {
-            switch(tempMsg.MsgId)
+            switch (tempMsg.MsgId)
             {
                 case (ushort)UIEventFight.FightBack:
                     Debug.Log("Back");
                     _PanelData.PopPanel();
                     break;
                 case (ushort)UIEventFight.CreateSutdio:
-                    Debug.Log("跳转到创建工作室");
+                    Debug.Log("跳转到创建工作室");  
                     _PanelData.PushPanel(_Create.gameObject);
                     break;
                 case (ushort)UIEventFight.JoinStudio:

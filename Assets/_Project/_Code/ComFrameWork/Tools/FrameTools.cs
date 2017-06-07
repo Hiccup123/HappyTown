@@ -24,8 +24,6 @@ namespace UIFW
         CharactorManager = FrameTools.MsgSpan * 4,
         AssetManager = FrameTools.MsgSpan * 5,
         NetManager = FrameTools.MsgSpan * 6,
-
-        UIManagerTwo = FrameTools.MsgSpan * 7,
     }
 
     public class FrameTools{

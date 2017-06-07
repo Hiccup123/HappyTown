@@ -1,5 +1,5 @@
 /***
-* 功 能： 万能框架
+* 功 能： 消息基类
 * 描 述： Manager 功能
 *           1.存储对应的注册进来的msg
 *           2.msg进来后，找到对应脚本 
@@ -16,10 +16,12 @@ using UnityEngine;
 
 namespace UIFW
 {
-	public class MsgBase{
-
+    public class MsgBase<T>
+    {
         //表示 65535 个消息  占两个字节
         public ushort MsgId { get; private set; }
+
+        public T Body { get; private set; }
 
         public ManagerID GetManager()
         {
@@ -32,15 +34,20 @@ namespace UIFW
         {
             MsgId = tempId;
         }
+
+        public MsgBase(ushort tempId,T body)
+        {
+            MsgId = tempId;
+            Body = body;
+        }
     }
 
-    public class FightMsgBase : MsgBase
+    public class TestData
     {
-        public Transform TransformObj { get; private set; }
-
-        public FightMsgBase(ushort tempId,Transform tempTrans) : base(tempId)
+        public int m;
+        public TestData(int tempM)
         {
-            TransformObj = tempTrans;
+            m = tempM;
         }
     }
 }

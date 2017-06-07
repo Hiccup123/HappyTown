@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UIForm
+namespace UIFW
 {
     public class SysDefine
     {

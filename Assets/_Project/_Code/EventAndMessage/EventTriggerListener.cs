@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UIForm
+namespace UIFW
 {
     public class EventTriggerListener : EventTrigger
     {

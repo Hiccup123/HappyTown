@@ -28,12 +28,12 @@ namespace UIFW
             NPCManager.Instance.UnRegistMsg(mono, msgs);
         }
 
-        public void SendMsg(MsgBase tempMsg)
+        public void SendMsg<T>(MsgBase<T> tempMsg)
         {
             NPCManager.Instance.SendMsg(tempMsg);
         }
 
-        public override void ProcessEvent(MsgBase tempMsg)
+        public override void ProcessEvent<T>(MsgBase<T> tempMsg)
         {
 
         }

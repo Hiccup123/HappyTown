@@ -28,16 +28,15 @@ namespace UIFW
 
         void Start () 
 		{
-            UIManager.Instance.GetGameObject("LightOn").GetComponent<UIBehaviour>().AddButtonListener(ButtonClick);
+            UIManager.Instance.GetObjComponent<UIBehaviour>("LightOn").AddButtonListener(ButtonClick);
 		}
 		
 		public void ButtonClick()
         {
-            MsgBase msgBase = new MsgBase((ushort)UIEventFight.CreateSutdio);
-            SendMsg(msgBase);
+            SendMsg((ushort)UIEventFight.CreateSutdio);
         }
 
-        public override void ProcessEvent(MsgBase tempMsg)
+        public override void ProcessEvent<T>(MsgBase<T> tempMsg)
         {
             switch(tempMsg.MsgId)
             {

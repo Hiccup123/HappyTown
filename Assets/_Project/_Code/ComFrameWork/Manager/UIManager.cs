@@ -26,7 +26,7 @@ namespace UIFW
             Instance = this;
         }
 
-        public void SendMsg(MsgBase tempMsg)
+        public void SendMsg<T>(MsgBase<T> tempMsg)
         {
             Debug.Log("tempMsg.GetManager():" + tempMsg.GetManager());
          
@@ -59,14 +59,19 @@ namespace UIFW
         }
         #endregion
 
-        public GameObject GetGameObject(string name)
+        public T GetObjComponent<T>(string name) where T : Component
         {
-            if(_SonMemberDic.ContainsKey(name))
+            if (_SonMemberDic.ContainsKey(name))
             {
-                return _SonMemberDic[name];
+                return _SonMemberDic[name].GetComponent<T>() ?? _SonMemberDic[name].AddComponent<T>();
             }
             Debug.LogError(name + " is null !!!");
-            return null;
+            return default(T);
+        }
+        
+        public UIBehaviour GetUIBehaviour(string name)
+        {
+            return GetObjComponent<UIBehaviour>(name);
         }
     }
 }

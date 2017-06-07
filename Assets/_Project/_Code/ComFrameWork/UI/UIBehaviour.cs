@@ -95,6 +95,26 @@ namespace UIFW
             }
         }
         #endregion
+
+        #region Dropdown
+        public void AddDropdownListener(UnityAction<int> action)
+        {
+            if (action != null)
+            {
+                Dropdown dropdown = transform.GetComponent<Dropdown>();
+                dropdown.onValueChanged.AddListener(action);
+            }
+        }
+
+        public void RemoveDropdownListener(UnityAction<int> action)
+        {
+            if (action != null)
+            {
+                Dropdown dropdown = transform.GetComponent<Dropdown>();
+                dropdown.onValueChanged.RemoveListener(action);
+            }
+        }
+        #endregion
     }
 }
 
