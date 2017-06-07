@@ -11,5 +11,8 @@ public class MainUIForm : BaseUIForms {
         CurrentUIType.UIForms_Type = UIFormType.Normal;
     }
 
-
+    public void OnClickItem()
+    {
+        Debug.Log("Group");
+    }
 }
