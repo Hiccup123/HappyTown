@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
         //LogSystem.WriteData(GetType() + "/Start()/");
         //LogSystem.SyncLogCatchToFile();
 
-        UIFormManager.Instance.ShowUIForm("MainUIForm");
+        //UIFormManager.Instance.ShowUIForm("MainUIForm");
         UIFormManager.Instance.ShowUIForm("FightUIForm");
         //PoolManager.Instance.RequestObj(Resources.Load("_Prefabs/_UIPrefabs/Canvas") as GameObject);
 	}

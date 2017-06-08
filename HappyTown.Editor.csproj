@@ -55,6 +55,9 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -97,6 +100,9 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.VR">
       <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
     </Reference>
@@ -115,8 +121,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx.Json">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\JsonFx\JsonFx.Json.dll</HintPath>
+    </Reference>
     <Reference Include="TexturePackerImporter">
       <HintPath>Assets\codeandweb.com\Editor\TexturePackerImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>Assets\PigeonCoopToolkit\External\Editor\Poly2Tri\Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net">
       <HintPath>Assets\Plugins\Dll_File\protobuf-net.dll</HintPath>
@@ -138,9 +153,45 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\EditorGUIx.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\EditorUtilities.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+    <Compile Include="Assets\AstarPathfindingProject\Editor\SeekerEditor.cs" />
     <Compile Include="Assets\Editor\AddFileHead.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\External\Editor\Clipper\clipper.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Generic\Editor\AboutUtillityWindow.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Generic\Editor\DragWrapper.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Generic\Editor\GUIHelper\GUISidebar.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Generic\Editor\GUIHelper\GUIWidget.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Generic\Editor\VersionedEditorWindow.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Navmesh2D\Editor\NavMesh2DBehaviourInspector.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Navmesh2D\Editor\Navmesh2DEditor.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Navmesh2D\Editor\OffMeshLink2DEditor.cs" />
+    <Compile Include="Assets\PigeonCoopToolkit\Utillities\Editor\RangePropertyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
+    <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
+    <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+    <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+    <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
+    <None Include="Assets\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+    <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
+    <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\License.txt" />
+    <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
+    <None Include="Assets\AstarPathfindingProject\Plugins\dependencies.txt" />
+    <None Include="Assets\AstarPathfindingProject\Readme.txt" />
+    <None Include="Assets\AstarPathfindingProject\Readme_upgrading.txt" />
+    <None Include="Assets\AstarPathfindingProject\link.xml" />
+    <None Include="Assets\PigeonCoopToolkit\External\Editor\Poly2Tri\Poly2Tri Lic.txt" />
+    <None Include="Assets\PigeonCoopToolkit\__SharedDemoAssets\_Shaders\Unlit Transparent Color.shader" />
     <None Include="Assets\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
     <None Include="Assets\codeandweb.com\Readme.txt" />
   </ItemGroup>
