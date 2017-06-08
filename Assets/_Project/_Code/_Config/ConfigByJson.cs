@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-namespace UIForm
+namespace UIFW
 {
     public class ConfigByJson : IConfig
     {
