@@ -39,199 +39,87 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>D:/Unity5.5/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>D:/Unity5.5/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\OtherThings\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\BMFontReader.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\ComponentSelector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\EventDelegateDrawer.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\EventDelegateEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\FreeType.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIContextMenu.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIEditorExtensions.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIHandles.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIHelp.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIJson.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUIMenu.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUISettings.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUISnap.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\PropertyBindingEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\SpriteSelector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenAlphaEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenColorEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenFOVEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenHeightEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenPositionEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenRotationEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenScaleEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenTransformEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenVolumeEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\TweenWidthEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UI2DSpriteEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIAnchorEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIButtonColorEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIButtonEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIButtonKeysEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIButtonMessageEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UICameraEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UICameraTool.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIDragObjectEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIDrawCallViewer.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIEventTriggerEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIFontInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIFontMaker.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIForwardEventsEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIGridEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIInputEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UILabelInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UILocalizeEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIPanelInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIPanelTool.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIPlayTweenEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIPrefabTool.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIProgressBarEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIRectEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIRootEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIScrollBarEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIScrollViewEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UISliderEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UISnapshotPointEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UISpriteInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIStretchEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UITableEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UITextureInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UITexturePacker.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIToggleInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UITweenerEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
-     <Compile Include="Assets\OtherThings\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
-     <None Include="Assets\OtherThings\NGUI\ReadMe - 3.6.7.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Models\Orc\Orc Skin.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
-     <None Include="Assets\OtherThings\StrangeIOC\examples\scripts\signalsproject\ReadMe.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
-     <None Include="Assets\OtherThings\StrangeIOC\scripts\strange\extensions\ReadMe.txt" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
-     <None Include="Assets\OtherThings\UI_Framework\Resources\Localization\English.json.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
-     <None Include="Assets\OtherThings\StrangeIOC\examples\scripts\myfirstproject\ReadMe.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
-     <None Include="Assets\OtherThings\ArtResources\2DResoures\AtlasProject\CommonAtlas.txt" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Text.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
-     <None Include="Assets\OtherThings\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
-     <None Include="Assets\OtherThings\ArtResources\2DResoures\AtlasProject\CellAtlas.txt" />
-     <None Include="Assets\OtherThings\UI_Framework\Resources\Localization\Chinese.json.txt" />
-     <None Include="Assets\OtherThings\StrangeIOC\examples\scripts\multiplecontexts\ReadMe.txt" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Shaders\Refractive.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Shaders\Unlit - Depth.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
-     <None Include="Assets\OtherThings\NGUI\Examples\Resources\Localization.txt" />
+     <Compile Include="Assets\Editor\AddFileHead.cs" />
+     <None Include="Assets\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
+     <None Include="Assets\codeandweb.com\Readme.txt" />
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.EditorTestsRunner">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Networking">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.PlaymodeTestsRunner">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Analytics">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.HoloLens">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.VR">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>D:/Unity5.5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="Debuger">
- <HintPath>G:/CrazzyRoot/UnityProject/HappyTown/Assets/OtherThings/Scripts/Debuger/Debuger.dll</HintPath>
+ <Reference Include="TexturePackerImporter">
+ <HintPath>D:/WorkProject/GitHub/HappyTown/Assets/codeandweb.com/Editor/TexturePackerImporter.dll</HintPath>
  </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>G:/CrazzyRoot/UnityProject/HappyTown/Assets/OtherThings/UI_Framework/SimpleJSON/ICSharpCode.SharpZipLib.dll</HintPath>
+ <Reference Include="protobuf-net">
+ <HintPath>D:/WorkProject/GitHub/HappyTown/Assets/Plugins/Dll_File/protobuf-net.dll</HintPath>
+ </Reference>
+ <Reference Include="ProtoClasses">
+ <HintPath>D:/WorkProject/GitHub/HappyTown/Assets/Plugins/Dll_File/ProtoClasses.dll</HintPath>
+ </Reference>
+ <Reference Include="ProtoSerializer">
+ <HintPath>D:/WorkProject/GitHub/HappyTown/Assets/Plugins/Dll_File/ProtoSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows.Forms">
+ <HintPath>D:/WorkProject/GitHub/HappyTown/Assets/Plugins/Dll_File/System.Windows.Forms.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>D:/Unity5.5/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>D:/Unity5.5/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
- <HintPath>D:/Unity5.5/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ <HintPath>D:/WorkSoft/Unity/Unity5.5.0/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
