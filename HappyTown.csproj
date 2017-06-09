@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -69,9 +66,6 @@
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VR">
       <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
@@ -237,11 +231,13 @@
     <Compile Include="Assets\_Project\_Code\FightScene\FightSelectUI.cs" />
     <Compile Include="Assets\_Project\_Code\FightScene\FightUIForm.cs" />
     <Compile Include="Assets\_Project\_Code\GameManager.cs" />
-    <Compile Include="Assets\_Project\_Code\MainScene\ActionData.cs" />
+    <Compile Include="Assets\_Project\_Code\MainScene\Action\ActionData.cs" />
+    <Compile Include="Assets\_Project\_Code\MainScene\Action\IAction.cs" />
     <Compile Include="Assets\_Project\_Code\MainScene\CompareLayer.cs" />
-    <Compile Include="Assets\_Project\_Code\MainScene\IAction.cs" />
     <Compile Include="Assets\_Project\_Code\MainScene\MainUIForm.cs" />
-    <Compile Include="Assets\_Project\_Code\MainScene\Map.cs" />
+    <Compile Include="Assets\_Project\_Code\MainScene\Map\IObstacle.cs" />
+    <Compile Include="Assets\_Project\_Code\MainScene\Map\MapData.cs" />
+    <Compile Include="Assets\_Project\_Code\MainScene\Map\ObstacleBase.cs" />
     <Compile Include="Assets\_Project\_Code\MainScene\Worker.cs" />
     <Compile Include="Assets\_Project\_Code\MainScene\WorkerManager.cs" />
     <Compile Include="Assets\_Project\_Code\_Config\ConfigByJson.cs" />

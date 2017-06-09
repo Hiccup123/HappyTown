@@ -1,8 +1,8 @@
 /***
-* 功 能： N/A
+* 功 能： 障碍物分组
 * 描 述： 
 *
-* 日 期：6/8/2017
+* 日 期：6/9/2017
 * ───────────────────────────────────
 * 版 本：v1.0         作 者：LL
 *
@@ -11,20 +11,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UIFW;
+using System;
 
-namespace MyName
+namespace MainCity
 {
-	public class Map : MonoBehaviour {
+	public class ObstacleBase : MonoBase
+    {
 
-		void Start () 
-		{
-			
-		}
-		
-		void Update () 
-		{
-			
-		}
-	}
+
+        public override void ProcessEvent<T>(MsgBase<T> tempMsg)
+        {
+            
+        }
+    }
 }
 

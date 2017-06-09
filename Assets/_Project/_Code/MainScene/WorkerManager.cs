@@ -24,10 +24,14 @@ namespace MainCity
 
         private List<GameObject> _CanWalkList;
 
+        private MapData mapData;
+
         private void Awake()
         {
-            _BoxGroup = new GameObject[25,22];
+            _BoxGroup = new GameObject[30,22];
             _CanWalkList = new List<GameObject>();
+
+            mapData = new MapData();
 
             CreateMap();
         }
@@ -36,8 +40,6 @@ namespace MainCity
         {
             float boxWidth = _MapBox.GetComponent<Image>().preferredWidth + 4;  //80
             float boxHeight = _MapBox.GetComponent<Image>().preferredHeight;    //41 
-            Debug.Log("boxWidth:" + boxWidth);
-            Debug.Log("boxHeight:" + boxHeight);
 
             for (int i = 0;i < _BoxGroup.GetLength(0);i ++)
             {
@@ -46,78 +48,132 @@ namespace MainCity
                     float x = _MapBox.transform.localPosition.x + j * boxWidth / 2 + i * boxWidth / 2;
                     float y = _MapBox.transform.localPosition.y + j * boxHeight / 2 - i * boxHeight / 2;
 
-                    GameObject mapObx = Instantiate(_MapBox) as GameObject;
-                    mapObx.SetActive(true);
-                    mapObx.transform.parent = _MapBox.transform.parent;
-                    mapObx.transform.localPosition = new Vector3(x,y,0);
-                    mapObx.transform.localScale = Vector3.one;
-                    mapObx.transform.localRotation = _MapBox.transform.localRotation;
-                    _BoxGroup[i, j] = mapObx;
-                    mapObx.name = "(" + i + "," + j + ")";
-                    UnityHelper.GetChildNodeComponentScript<Text>(mapObx, "Text").text = "(" + i + "," + j + ")";
+                    if(mapData.HaveBox(i,j))
+                    {
+                        GameObject mapObx = null;
+                        if (i < 22)
+                        {
+                            mapObx = Instantiate(_MapBox) as GameObject;
+                            mapObx.SetActive(true);
+                            mapObx.transform.parent = _MapBox.transform.parent;
+                            mapObx.transform.localPosition = new Vector3(x, y, 0);
+                            mapObx.transform.localScale = Vector3.one;
+                            mapObx.transform.localRotation = _MapBox.transform.localRotation;
+                            _BoxGroup[i, j] = mapObx;
+                            mapObx.name = "(" + i + "," + j + ")";
+                            UnityHelper.GetChildNodeComponentScript<Text>(mapObx, "Text").text = "(" + i + "," + j + ")";
+                        }
+                        else
+                        {
+                            if (j == 17 || j == 18)
+                            {
+                                mapObx = Instantiate(_MapBox) as GameObject;
+                                mapObx.SetActive(true);
+                                mapObx.transform.parent = _MapBox.transform.parent;
+                                mapObx.transform.localPosition = new Vector3(x, y, 0);
+                                mapObx.transform.localScale = Vector3.one;
+                                mapObx.transform.localRotation = _MapBox.transform.localRotation;
+                                _BoxGroup[i, j] = mapObx;
+                                mapObx.name = "(" + i + "," + j + ")";
+                                UnityHelper.GetChildNodeComponentScript<Text>(mapObx, "Text").text = "(" + i + "," + j + ")";
+                            }
+                        }
 
-                    if (i == 0 && j == 20)
-                    {
                         mapObx.GetComponent<Image>().color = Color.red;
                     }
-                    if (i <= 2 && j == 21)
-                    {
-                        mapObx.GetComponent<Image>().color = Color.red;
-                    }
-                    if (i == 3 && j >= 17)
-                    {
-                        mapObx.GetComponent<Image>().color = Color.red;
-                    }
-                    if (i >= 4 && i <= 5)
-                    {
-                        if ((j >= 17 && j <= 18) || (j >= 1 && j <= 14))
-                        {
-                            mapObx.GetComponent<Image>().color = Color.red;
-                        }
-                    }
-                    if(i >= 6 && i <= 14)
-                    {
-                        if(j >= 15 & j <= 18)
-                        {
-                            mapObx.GetComponent<Image>().color = Color.red;
-                        }
-                    }
-                    if(i >= 8 && i <= 14)
-                    {
-                        if(j >= 19 && j <= 20)
-                        {
-                            mapObx.GetComponent<Image>().color = Color.red;
-                        }
-                    }
-                    if(i >= 11 & i <= 20)
-                    {
-                        if(j >= 1 && j <= 13)
-                        {
-                            mapObx.GetComponent<Image>().color = Color.red;
-                        }
-                    }
-                    if(i == 16)
-                    {
-                        if(j >= 15 && j <= 20)
-                        {
-                            mapObx.GetComponent<Image>().color = Color.red;
-                        }
-                    }
-                    if(i >= 19 && i <= 20)
-                    {
-                        if(j >= 15 && j <= 20)
-                        {
-                            mapObx.GetComponent<Image>().color = Color.red;
-                        }
-                    }
-                    if(i == 21 && (j == 17 || j == 18))
-                    {
-                        mapObx.GetComponent<Image>().color = Color.red;
-                    }
-                    if ((j == 1 || j == 7 || j == 8 || j == 14) && i != 21)
-                    {
-                        mapObx.GetComponent<Image>().color = Color.red;
-                    }
+
+                    //GameObject mapObx = null;
+                    //if(i < 22)
+                    //{
+                    //    mapObx = Instantiate(_MapBox) as GameObject;
+                    //    mapObx.SetActive(true);
+                    //    mapObx.transform.parent = _MapBox.transform.parent;
+                    //    mapObx.transform.localPosition = new Vector3(x, y, 0);
+                    //    mapObx.transform.localScale = Vector3.one;
+                    //    mapObx.transform.localRotation = _MapBox.transform.localRotation;
+                    //    _BoxGroup[i, j] = mapObx;
+                    //    mapObx.name = "(" + i + "," + j + ")";
+                    //    UnityHelper.GetChildNodeComponentScript<Text>(mapObx, "Text").text = "(" + i + "," + j + ")";
+                    //}
+                    //else
+                    //{
+                    //    if(j == 17 || j == 18)
+                    //    {
+                    //        mapObx = Instantiate(_MapBox) as GameObject;
+                    //        mapObx.SetActive(true);
+                    //        mapObx.transform.parent = _MapBox.transform.parent;
+                    //        mapObx.transform.localPosition = new Vector3(x, y, 0);
+                    //        mapObx.transform.localScale = Vector3.one;
+                    //        mapObx.transform.localRotation = _MapBox.transform.localRotation;
+                    //        _BoxGroup[i, j] = mapObx;
+                    //        mapObx.name = "(" + i + "," + j + ")";
+                    //        UnityHelper.GetChildNodeComponentScript<Text>(mapObx, "Text").text = "(" + i + "," + j + ")";
+                    //    }
+                    //}
+                    
+
+                    //if (i == 0 && j == 20)
+                    //{
+                    //    mapObx.GetComponent<Image>().color = Color.red;
+                    //}
+                    //if (i <= 2 && j == 21)
+                    //{
+                    //    mapObx.GetComponent<Image>().color = Color.red;
+                    //}
+                    //if (i == 3 && j >= 17)
+                    //{
+                    //    mapObx.GetComponent<Image>().color = Color.red;
+                    //}
+                    //if (i >= 4 && i <= 5)
+                    //{
+                    //    if ((j >= 17 && j <= 18) || (j >= 1 && j <= 14))
+                    //    {
+                    //        mapObx.GetComponent<Image>().color = Color.red;
+                    //    }
+                    //}
+                    //if(i >= 6 && i <= 14)
+                    //{
+                    //    if(j >= 15 & j <= 18)
+                    //    {
+                    //        mapObx.GetComponent<Image>().color = Color.red;
+                    //    }
+                    //}
+                    //if(i >= 8 && i <= 14)
+                    //{
+                    //    if(j >= 19 && j <= 20)
+                    //    {
+                    //        mapObx.GetComponent<Image>().color = Color.red;
+                    //    }
+                    //}
+                    //if(i >= 11 & i <= 20)
+                    //{
+                    //    if(j >= 1 && j <= 13)
+                    //    {
+                    //        mapObx.GetComponent<Image>().color = Color.red;
+                    //    }
+                    //}
+                    //if(i == 16)
+                    //{
+                    //    if(j >= 15 && j <= 20)
+                    //    {
+                    //        mapObx.GetComponent<Image>().color = Color.red;
+                    //    }
+                    //}
+                    //if(i >= 19 && i <= 20)
+                    //{
+                    //    if(j >= 15 && j <= 20)
+                    //    {
+                    //        mapObx.GetComponent<Image>().color = Color.red;
+                    //    }
+                    //}
+                    //if(i >= 21 && (j == 17 || j == 18))
+                    //{
+                    //    mapObx.GetComponent<Image>().color = Color.red;
+                    //}
+                    //if ((j == 1 || j == 7 || j == 8 || j == 14) && i < 21)
+                    //{
+                    //    mapObx.GetComponent<Image>().color = Color.red;
+                    //}
                 }
             }
         }
